@@ -188,7 +188,7 @@ body {
 }
 /* Screenshot Section */
 .screenshot-section {
-  background-color: #111111;
+  background-color: #F8F8F8;
   padding: 100px 40px;
   text-align: center;
 }
@@ -311,7 +311,7 @@ body {
 .logo-slider {
   overflow: hidden;
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #FAEBCD;
   padding: 20px 0;
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
