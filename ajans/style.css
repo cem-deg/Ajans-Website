@@ -105,8 +105,8 @@ body {
 }
 
 .feature-card {
-  background-color: #fae5a5; /* Daha canlı sarı */
-  border: 1.5px solid #e0c075;
+  background-color: #FAEBCD; /* Daha canlı sarı */
+  border: 2px solid #ffd700;
   border-radius: 16px;
   padding: 30px 24px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -115,7 +115,7 @@ body {
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(253, 178, 4, 0.716);
+  box-shadow: 0 12px 24px rgba(253, 178, 4, 0.295);
 }
 
 .feature-card h3 {
@@ -132,7 +132,7 @@ body {
 /* How it Works Section */
 .how-it-works {
   padding: 80px 40px;
-  background-color: #0f0f0f;
+  background-color: #F8F8F8;
   text-align: center;
 }
 
@@ -152,8 +152,8 @@ body {
 
 .step {
   flex: 1 1 250px;
-  background-color: #1a1a1a;
-  border: 1px solid #2a2a2a;
+  background-color: #FAEBCD;
+  border: 2px solid #ffd700;
   border-radius: 16px;
   padding: 30px 24px;
   transition: transform 0.3s;
@@ -312,7 +312,7 @@ body {
 .logo-slider {
   overflow: hidden;
   width: 100%;
-  background-color: #FAEBCD;
+  background-color: #F8F8F8;
   padding: 20px 0;
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
@@ -331,7 +331,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #ffd90071;
   transition: transform 0.3s;
 }
 
