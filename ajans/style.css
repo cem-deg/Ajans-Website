@@ -66,7 +66,7 @@ body {
   display: inline-block;
 }
 
-/* Hero */
+/* Hero (en üst kısım resimli olan)*/
 .hero {
   text-align: center;
   padding: 290px 24px;
@@ -105,31 +105,44 @@ body {
 }
 
 .feature-card {
-  background-color: #FAEBCD; /* Daha canlı sarı */
-  border: 2px solid #ffd700;
+  animation: fadeInUp 0.6s ease-in-out;
+  background-color: linear-gradient(145deg, #ffe8a0, #ffd700); /* Daha canlı sarı */
+  border: 1px solid #ffd700;
   border-radius: 16px;
   padding: 30px 24px;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3)
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
 .feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(253, 178, 4, 0.295);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(255, 215, 0, 0.45);
 }
 
 .feature-card h3 {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 700;
   margin-bottom: 12px;
-  color: #2f2f2f;
+  color: #222;
 }
 
 .feature-card p {
-  color: #5a5a5a;
+  color: #333;
   font-size: 16px;
   line-height: 1.5;
 }
-/* How it Works Section */
+/* How it Works Section (Nasıl İlerliyoruz) */
 .how-it-works {
   padding: 80px 40px;
   background-color: #F8F8F8;
@@ -166,8 +179,8 @@ body {
 .step-number {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #F7C873;
+  color: white;
   font-weight: bold;
   border-radius: 50%;
   margin: 0 auto 16px;
@@ -331,7 +344,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffd90071;
+  color: #ffd9009c;
   transition: transform 0.3s;
 }
 
