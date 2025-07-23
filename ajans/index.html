@@ -134,7 +134,10 @@
     </div>
   </div>
 </section>
-
+<br>
+<br>
+<br>
+<br>
 
   <script src="script.js"></script>
   <!-- AOS JS -->
@@ -147,34 +150,29 @@
     mirror: true,
   });
 </script>
-   <!-- yukarı çık butonu -->
-<button id="scrollTopBtn" title="Yukarı Çık"><i class="fas fa-angle-double-up"></i></button>
-<script>
-  // Butonu göster/gizle
-  const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-  window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      scrollTopBtn.style.display = "block";
-    } else {
-      scrollTopBtn.style.display = "none";
-    }
-  };
 
-  // Tıklanınca en üste git
-  scrollTopBtn.onclick = function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
 <div class="nav-underline"></div>
 
-<footer style="text-align:center; padding: 20px; font-size: 14px; color: black;">
-  © 2025 The Media. Tüm Hakları Saklıdır.
-  <section class="sosyal-medya">
-    <h2>The MEDIA</h2>
-    
-  </section>
-  
+<section class="footer-contact-info">
+  <div class="footer-contact-container">
+    <div class="footer-left">
+      <h2>The MEDIA Ajans & Medya</h2>
+      
+      
+    </div>
+    <div class="footer-right">
+      <p><i class="fas fa-envelope"></i>info@themedia.com</p>
+      <p><i class="fas fa-phone"></i> +90 555 555 55 55</p>
+    </div>
+  </div>
+</section>
+<div class="nav-underline-short"></div>
+<div class="footer-line-wrapper">
+  <p class="footer-text">The MEDIA © 2025. Tüm Hakları Saklıdır.</p>
+</div>
+
+
 </footer>
 
 </body>

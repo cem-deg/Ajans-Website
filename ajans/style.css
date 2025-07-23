@@ -155,31 +155,48 @@ body {
 }
 
 .steps {
+  /*
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
   max-width: 1100px;
+  margin: 0 auto; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .step {
-  flex: 1 1 250px;
+  /* flex: 1 1 250px;
   background-color: #FAEBCD;
   border: 2px solid #ffd700;
   border-radius: 16px;
   padding: 30px 24px;
-  transition: transform 0.3s;
+  transition: transform 0.3s; */
+
+  animation: fadeInUp 0.6s ease-in-out;
+  background-color: linear-gradient(145deg, #ffe8a0, #ffd700); /* Daha canlı sarı */
+  border: 1px solid #ffd700;
+  border-radius: 16px;
+  padding: 30px 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.3)
 }
 
 .step:hover {
-  transform: translateY(-6px);
+  /* transform: translateY(-6px); */
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(255, 215, 0, 0.45);
 }
 
 .step-number {
   width: 44px;
   height: 44px;
-  background-color: #F7C873;
+  background-color: #ffd900be;
   color: white;
   font-weight: bold;
   border-radius: 50%;
@@ -234,7 +251,7 @@ body {
 .nav-underline {
   width: 100%;
   height: 1.5px;
-  background-color: #F7C873;
+  background-color: #ffd700;
   margin: 0;
 }
 .icon-style {
@@ -248,7 +265,7 @@ body {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 100;
+  z-index: 9999;
   background-color: #ffffff10;
   color: white;
   border: 1px solid #ffffff30;
@@ -344,13 +361,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffd9009c;
+  color: #ffd90067;
   transition: transform 0.3s;
 }
 
 .logo-track i:hover {
   transform: scale(1.2);
-  color: #ffd700; /* #D6BD98 */
+  color: #ffd900; /* #D6BD98 */
 }
 
 @keyframes scroll {
@@ -425,6 +442,70 @@ body {
   color: #dddddd;
 
 }
+/* sayfanın en altındaki bize ulaşın kısmı */
+.footer-contact-info {
+  background-color: #F8F8F8;
+  padding: 60px 20px;
+}
+
+.footer-contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.footer-left p{
+  color: black;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right p {
+  margin: 4px 0;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-right i {
+  color: #000;
+  font-size: 16px;
+}
+
+.nav-underline-short {
+  width: 60%;
+  height: 1px;
+  background-color: #ffd700;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-line-wrapper {
+  text-align: center; /* içindeki her şeyi ortalar */
+   /* üst boşluk istersen */
+}
+
+.footer-text {
+  color: black; /* isteğe göre siyah ya da başka renk */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 
 
 
